@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+.hero {
+    height: 400px;
+}
+
+.hero-title {
+    font-family: 'Gloock', serif;
+    font-size: 90px;
+}
+
+.hero-description {
+    font-size: 18px;
+}
+
+.article-title {
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}

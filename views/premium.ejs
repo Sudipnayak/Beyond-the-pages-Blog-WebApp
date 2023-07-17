@@ -1,0 +1,21 @@
+<%- include('./layouts/heading') %>
+    <div class="container ">
+        <div class="row justify-content-center ">
+            <div class="col-md-8 ">
+                <% for(let i=0; i < blogs.length; i++) {%>
+                    <div class="mt-4 border border-dark rounded p-2 mb-2">
+                   <h2><a href="/<%=blogs[i]._id %>" class="article-title">
+                    <%= blogs[i].title %>
+                </a></h2>
+                <a href="/edit/<%=blogs[i]._id %>" class="">
+                    Edit
+                </a>
+                <a href="/delete/<%=blogs[i]._id %>" class="text-danger mx-3">
+                    Delete
+                </a>
+</div>
+
+                    <%}%>
+            </div>
+        </div>
+    </div>
