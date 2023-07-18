@@ -17,3 +17,18 @@
     text-decoration: none;
     color:rgb(0, 0, 0);
 }
+.story{
+width: auto;
+}
+
+.story-title{
+    font-size: 70px;
+}
+
+.story-content{
+    font-family: poppins;   
+}
+
+.video-content{
+    
+}    
