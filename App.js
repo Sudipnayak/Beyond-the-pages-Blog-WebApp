@@ -1,12 +1,16 @@
 const express = require('express');
 const app = express();
 const ejs = require('ejs');
+const env = require('dotenv')
+env.config();
 const mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
 const bodyParser = require('body-parser')
 const ObjectId = require('mongoose').Types.ObjectId;
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
+
 
 mongoose.connect('mongodb+srv://sudipnayak152002:hellosudip@datasudip.q0s46c8.mongodb.net/?retryWrites=true&w=majority').then(() => {
     console.log('DB is connected!')
